@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background: url(./img/logo1.jpg) no-repeat;
+    background-size: cover;
+	font-family: sans-serif;
+}
+
+.form {
+    width: 420px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.562);
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.603);
+    padding: 4rem 1rem;
+    color: white;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form label {
+    margin-bottom: 1rem;
+}
+
+.form input {
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    opacity: 0.9;
+}
+
+.form input::placeholder {
+    opacity: 0;
+}
+
+.form button {
+    width: 30%;
+    padding: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    color: white;
+    letter-spacing: 1px;
+    transform-origin: 0 0;
+    margin-bottom: 0.5rem;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #870000, #190a05);
+    transform: scale(1.05);
+    transition: 0.2s all ease-in-out;
+}
+
+.form a {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: underline;
+}

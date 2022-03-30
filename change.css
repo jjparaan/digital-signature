@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@400;700&family=Barlow:wght@400;600&family=Commissioner:wght@400;500;700&family=DM+Serif+Display&family=Didact+Gothic&family=Fraunces:ital,wght@0,900;1,700&family=Josefin+Sans:wght@300&family=Karla:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic';
+}
+
+/* Desktop View */
+body {
+	background: url(./img/logo1.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.form {
+    width: 420px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.562);
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.603);
+    padding: 4rem 1rem;
+    color: white;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.form label {
+    margin-bottom: 1rem;
+}
+
+.form input {
+    border: none;
+    border-radius: 4px;
+    padding: 12px 10px;
+    outline: none;
+    opacity: 0.9;
+    letter-spacing: 2px;
+}
+
+.form input::placeholder {
+    opacity: 0;
+}
+
+.form button {
+    width: 30%;
+    padding: 5px 0;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    color: white;
+    letter-spacing: 1px;
+    transform-origin: 0 0;
+    margin-bottom: 1rem;
+    transition: 0.2s all ease-in-out;
+}
+
+.form button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #870000, #190a05);
+    transform: scale(1.05);
+    transition: 0.2s all ease-in-out;
+}
+
+.form a {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: underline;
+    text-align: right;
+}
+
+/* Mobile View */
+@media  screen and (max-width:620px) {
+    body {
+        background-size: contain;
+    }
+
+    .form {
+        height: 80vh;
+        width: 70vw;
+    }
+
+    .form h2 {
+        margin-bottom: 20px;
+    }
+
+    .form label {
+        margin-bottom: 10px;
+    }
+    
+    .form input {
+        border: none;
+        border-radius: 4px;
+        padding: 10px 12px;
+        outline: none;
+        opacity: 0.9;
+        letter-spacing: 2px;
+    }
+    
+    .form button {
+        width: 100%;
+        padding: 5px 0;
+        border: none;
+        border-radius: 4px;
+        background: linear-gradient(to right, #8e0e00, #1f1c18);
+        color: white;
+        letter-spacing: 1px;
+        transform-origin: 0 0;
+        margin-bottom: 1rem;
+    }
+    
+    .form button:hover {
+        cursor: pointer;
+        background: linear-gradient(to right, #870000, #190a05);
+        transform: scale(1);
+    }
+}

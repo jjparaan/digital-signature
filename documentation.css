@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@400;700&family=Barlow:wght@400;600&family=Commissioner:wght@400;500;700&family=DM+Serif+Display&family=Didact+Gothic&family=Fraunces:ital,wght@0,900;1,700&family=Josefin+Sans:wght@300&family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Didact Gothic";
+}
+
+/* Desktop View */
+header {
+  height: 21.5vh;
+  width: 100%;
+  box-shadow: 0 5px 15px rgb(119, 4, 4);
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 100px;
+  margin: 0 1rem;
+}
+
+.section-body {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.section-tag-1,
+.section-tag-2,
+.section-tag-3,
+.section-tag-4 {
+  padding: 15px 80px;
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: #8e0e00;
+  background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);
+  background: linear-gradient(to right, #8e0e00, #1f1c18);
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.section-tag-1:hover,
+.section-tag-2:hover,
+.section-tag-3:hover,
+.section-tag-4:hover {
+  cursor: pointer;
+}
+
+.section-1 i,
+.section-2 i {
+  font-size: 32px;
+  background: transparent;
+  border: none;
+  position: relative;
+  left: calc(960px / -4.5);
+  top: 5px;
+  color: white;
+}
+
+.section-3 i,
+.section-4 i {
+  font-size: 32px;
+  background: transparent;
+  border: none;
+  position: relative;
+  left: calc(960px / -4);
+  top: 5px;
+  color: white;
+}
+
+.contact-page,
+.signup-page,
+.hello-page,
+.signature-page {
+  /* margin: 0; */
+  opacity: 0;
+  transition: 0.3s all ease-in;
+}
+
+.contact-active,
+.signup-active,
+.hello-active,
+.signature-active {
+  opacity: 1;
+  transition: 0.3s all ease-in;
+}
+
+.change-page {
+  opacity: 0;
+  transition: 0.6s all ease-in;
+}
+
+.change-active {
+  opacity: 1;
+  transition: 0.6s all ease-in;
+}
+
+.file-icon i {
+  font-size: 20px;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  left: calc(300px / 20);
+  top: 30px;
+  z-index: 1;
+}
+
+.contact-page button,
+.signup-page button,
+.hello-page button,
+.change-page button,
+.signature-page button {
+  padding: 10px 40px;
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: #8e0e00;
+  background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);
+  background: linear-gradient(to right, #8e0e00, #1f1c18);
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.contact-page button:hover,
+.signup-page button:hover,
+.hello-page button:hover,
+.change-page button:hover,
+.signature-page button:hover {
+  cursor: pointer;
+}
+
+.footer {
+  box-shadow: 0 5px 15px rgb(119, 4, 4);
+  height: 20vh;
+  text-align: center;
+}
+
+.footer img {
+  height: 50px;
+  margin: 10px 0px;
+}
+
+.main-active {
+  filter: blur(20px);
+}
+
+/* Modal Section */
+.contact-container,
+.sign-container,
+.hello-container,
+.cpass-container,
+.signature-container {
+  background-color: rgba(0, 0, 0, 0.603);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  transition: 0.1s all ease-in;
+}
+
+.modal-1,
+.modal-2,
+.modal-3,
+.modal-4,
+.modal-5 {
+  pointer-events: auto;
+  opacity: 1;
+  transition: 0.1s all ease-in;
+}
+
+.contact-modal,
+.sign-modal,
+.hello-modal,
+.cpass-modal,
+.signature-modal {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  padding: 30px 50px;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.contact-modal h1,
+.sign-modal h1,
+.hello-modal h1,
+.signature-modal h1 {
+  margin: 0;
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 0.8px;
+}
+
+.cpass-modal h1 {
+  margin: 0;
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 0.8px;
+}
+
+.contact-modal p,
+.sign-modal p,
+.hello-modal p,
+.cpass-modal p,
+.signature-modal p {
+  font-size: 14px;
+  opacity: 0.7;
+  text-align: left;
+}
+
+.contact-modal h2,
+.sign-modal h2,
+.hello-modal h2,
+.cpass-modal h2,
+.signature-modal h2 {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+}
+
+.contact-modal img,
+.sign-modal img,
+.hello-modal img,
+.cpass-modal img,
+.signature-modal img {
+  height: 40vh;
+  width: 100%;
+  box-shadow: 0 2px 15px rgb(0, 0, 0);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.p1 {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+.p2 {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+#close-contact,
+#close-sign,
+#close-hello,
+#close-cpass,
+#close-signature {
+  float: right;
+  padding: 4px 20px;
+  border-radius: 4px;
+  border: none;
+  background: #8e0e00;
+  background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);
+  background: linear-gradient(to right, #8e0e00, #1f1c18);
+  color: white;
+  letter-spacing: 1px;
+}
+
+#close-contact:hover,
+#close-sign:hover,
+#close-hello:hover,
+#close-cpass:hover,
+#close-signature:hover {
+  cursor: pointer;
+}

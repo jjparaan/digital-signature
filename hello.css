@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow+Semi+Condensed:wght@400;700&family=Barlow:wght@400;600&family=Commissioner:wght@400;500;700&family=DM+Serif+Display&family=Didact+Gothic&family=Fraunces:ital,wght@0,900;1,700&family=Josefin+Sans:wght@300&family=Karla:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Didact Gothic';
+}
+
+
+/* Desktop View */
+body {
+	background: url(./img/logo1.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.hello-container {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.562);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.603);
+    color: white;
+    border-top: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 580px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hello-container h1 {
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+
+.home-nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.home-nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s all ease-in;
+}
+
+.home-nav a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s all ease-in;
+}
+
+.start-now {
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.start-now:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #870000, #190a05);
+    transform: scale(1.09);
+    transition: 0.2s all ease-in-out;
+}
+
+/* Mobile View */
+@media  screen and (max-width:620px) {
+    body {
+        background-size: contain;
+        /* background-position: center; */
+    }
+
+    .hello-container {
+        width: 100%;
+        top: 50%;
+        left: 50%;
+    }
+}
